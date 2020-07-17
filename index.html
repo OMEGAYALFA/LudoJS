@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/rojo.png" type="image/png" />
+</head>
+<body onresize="//windowSize()">
+
+
+	<div id="bg"></div>
+
+
+	<div id="index" class="text-center">
+		<img src="img/logo.png" alt="" class="w-100">
+		<a href="#game"><button type="button" onclick="document.documentElement.requestFullscreen()" class="btn btn-success w-50 p-2"><span class="font-weight-bold" style="font-size: 2cm; color: black; font-family: 'Comic Sans MS'">PLAY</span></button></a>
+	</div>
+
+	<br><br><br><br><br><br>
+	<div id="game" class="d-inline-flex text-center">
+
+
+		<div class="bg-dark m-5 h-25">
+			<a href="index.html"><button id="back-button" onclick="document.exitFullscreen()" class="button btn-info">Back</button></a>
+			<br><br>
+			<div class="container">
+				<canvas id="Dice" width="150" height="150" onclick="rollDice()"></canvas>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<canvas id="canvas" width="750px" height="750px">
+			</canvas>
+		</div>
+	</div>
+
+	<footer>v1.0</footer>
+
+	<script src="js/canvas.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
